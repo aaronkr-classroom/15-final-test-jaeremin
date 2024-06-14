@@ -16,7 +16,7 @@ public:
 protected:
 	Grad* clone() const { return new Grad(*this); }
 private:
-	double thesis; // 논문
+	double thesis ; // 논문
 };
 
 #endif

@@ -10,7 +10,7 @@ istream& read_hw(istream& in, vector<double>& hw);
 
 string Core::getName() const { return name; }
 double Core::grade() const {
-	return ::grade(midterm, final, homework);
+	return ::grade(midterm, final, toeic);
 }
 
 /**
@@ -30,7 +30,7 @@ istream& Core::read_common(istream& in) {
 }
 istream& Core::read(istream& in) {
 	read_common(in);
-	read_hw(in, homework); // Student_info.h에 있다.
+	read_hw(in, toeic); // Student_info.h에 있다.
 	return in;
 }
 

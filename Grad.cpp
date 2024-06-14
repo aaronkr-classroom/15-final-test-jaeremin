@@ -9,7 +9,7 @@ istream& read_hw(istream& in, vector<double>& hw);
 istream& Grad::read(istream& in) {
 	Core::read_common(in);
 	in >> thesis;
-	read_hw(in, Core::homework);
+	read_hw(in, Core::toeic);
 	return in;
 }
 double Grad::grade() const {

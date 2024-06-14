@@ -21,7 +21,7 @@ double grade(double mt, double ft, double hw) {
 // 이 함수는 인수를 복사하기 않고 median 함수가 해당 작업을 실행.
 double grade(double mt, double ft, const vector<double>& hw) {
     if (hw.size() == 0)
-        throw domain_error("No homework!");
+        throw domain_error("No toeic!");
 
     return grade(mt, ft, median(hw));
 }
