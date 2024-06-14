@@ -23,7 +23,7 @@ public:
 protected:
 	istream& read_common(istream&); // 이름, 시험, 과제
 	double midterm, final;
-	vector<double> toeic;
+	vector<double> homework;
 
 	virtual Core* clone() const { return new Core(*this); }
 private:
